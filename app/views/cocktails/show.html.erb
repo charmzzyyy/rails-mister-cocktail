@@ -7,7 +7,9 @@
     <%= link_to 'Back to Cocktails', cocktails_path %>
 </div>
 
-<div>
+
+<div class="container">
+  <div>
 <h2> Ingredients </h2>
 <ul>
     <% @cocktail.doses.each do |dose| %>
@@ -25,3 +27,4 @@
 </div>
 
 <%= link_to 'Add an Ingredient', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary btn-lg my-3' %>
+</div>
