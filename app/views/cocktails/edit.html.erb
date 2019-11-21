@@ -1,0 +1,6 @@
+<h1>Editing <%= @cocktail.name %></h1>
+
+<%= render 'form', cocktail: @cocktail %>
+
+<%= link_to 'Show', @cocktail %> |
+<%= link_to 'Back', cocktail_path(@cocktail) %>

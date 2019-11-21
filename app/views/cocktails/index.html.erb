@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-align-center">Mister Cocktail</h1>
+
+<%= render 'card', cocktails: @cocktails %>
+
+<%= link_to 'Add New Cocktail', new_cocktail_path, class: 'btn btn-primary btn-lg btn-block my-3' %>
