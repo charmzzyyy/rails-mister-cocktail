@@ -18,7 +18,7 @@
         <strong>
             <%= dose.ingredient.name %> </strong> -
         <%=  dose.description %>
-        <%= link_to "Delete", cocktail_path(dose.cocktail), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
         <% end %>
     </div>
