@@ -1,20 +1,67 @@
 .card-cocktail {
-  background-size: cover;
-  background-position: center;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  a {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    .badges {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    a {
+        color: white;
+    }
+
+}
+
+.card-btn {
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+
+.card-cocktail-remove {
+    right: 10px;
+    top: 10px;
+    opacity: 0.8;
+    transform: rotate(45deg);
+    font-weight: lighter;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+.card-link-add {
+  opacity: 0.8;
+  font-weight: lighter;
+  border: 1px solid teal;
+  background-color: #f4f4f4;
+  opacity: 0.6;
+  color: teal;
+  transition: 0.3s, ease;
+  &:hover {
+    color: #6a6a6a;
+    text-decoration: none;
+    opacity: 1;
   }
 }

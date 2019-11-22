@@ -34,8 +34,8 @@ gem 'simple_form'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'dotenv-rails', groups: [:development, :test]
-
-# Use ActiveStorage variant
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'# Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment

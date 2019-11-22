@@ -1,7 +1,7 @@
-<div class="card-container">
-  <% cocktails.each do |cocktail| %>
-  <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/1600x900/?<%=cocktail.name%>)">
-    <%= link_to "#{cocktail.name}", cocktail_path(cocktail) %>
-  </div>
-<% end %>
-</div>
+
+        <% cocktails.each do |cocktail| %>
+        <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+            <%= link_to "#{cocktail.name}", cocktail_path(cocktail) %>
+        <%= link_to "+", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" }, class: "card-btn card-cocktail-remove" %>
+        </div>
+        <% end %>
