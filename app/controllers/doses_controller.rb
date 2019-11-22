@@ -22,10 +22,9 @@ class DosesController < ApplicationController
 
 
   def destroy
+    @dose = Dose.find(params[:id])
     @dose.destroy
-    respond_to do |format|
-      format.html { redirect_to @dose.cocktail_url, notice: 'Dose was successfully destroyed.' }
-      format.json { head :no_content }
+    redirect_to cocktail_path(@dose.cocktail), notice: 'Dose was successfully destroyed.'
     end
   end
 
