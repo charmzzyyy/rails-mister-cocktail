@@ -20,7 +20,6 @@ class DosesController < ApplicationController
     end
   end
 
-
   def destroy
     @dose = Dose.find(params[:id])
     @dose.destroy
@@ -37,6 +36,5 @@ class DosesController < ApplicationController
   def dose_params
     params.require(:dose).permit(:ingredient, :description)
   end
-end
 
 
