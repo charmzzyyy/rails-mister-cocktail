@@ -24,7 +24,7 @@ class DosesController < ApplicationController
   def destroy
     @dose.destroy
     respond_to do |format|
-      format.html { redirect_to cocktails_url, notice: 'Cocktail was successfully destroyed.' }
+      format.html { redirect_to @dose.cocktail_url, notice: 'Dose was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
