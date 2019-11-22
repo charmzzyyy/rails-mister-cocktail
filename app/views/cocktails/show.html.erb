@@ -17,9 +17,6 @@
         <p>
             <%= dose.ingredient.name %> -
             <%=  dose.description %>
-            (<%= link_to "Delete", cocktail_path(@cocktail),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>)
         </p>
         <% end %>
     </li>
